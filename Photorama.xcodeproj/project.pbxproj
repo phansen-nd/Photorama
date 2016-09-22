@@ -15,6 +15,7 @@
 		4317E1CD1D91FA83005BC2E0 /* PhotoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317E1CC1D91FA83005BC2E0 /* PhotoramaUITests.swift */; };
 		4317E1DB1D921D44005BC2E0 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317E1DA1D921D44005BC2E0 /* PhotosViewController.swift */; };
 		4317E1DD1D921FF5005BC2E0 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317E1DC1D921FF5005BC2E0 /* FlickrAPI.swift */; };
+		4317E1DF1D935577005BC2E0 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317E1DE1D935577005BC2E0 /* PhotoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4317E1CE1D91FA83005BC2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4317E1DA1D921D44005BC2E0 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		4317E1DC1D921FF5005BC2E0 /* FlickrAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		4317E1DE1D935577005BC2E0 /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4317E1B51D91FA83005BC2E0 /* LaunchScreen.storyboard */,
 				4317E1B81D91FA83005BC2E0 /* Info.plist */,
 				4317E1DC1D921FF5005BC2E0 /* FlickrAPI.swift */,
+				4317E1DE1D935577005BC2E0 /* PhotoStore.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				4317E1DD1D921FF5005BC2E0 /* FlickrAPI.swift in Sources */,
 				4317E1DB1D921D44005BC2E0 /* PhotosViewController.swift in Sources */,
+				4317E1DF1D935577005BC2E0 /* PhotoStore.swift in Sources */,
 				4317E1AD1D91FA83005BC2E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

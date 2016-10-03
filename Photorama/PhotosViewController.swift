@@ -20,14 +20,22 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate {
         collectionView.dataSource = photoDataSource
         collectionView.delegate = self
         
+        updateDataSource()
+        
         store.fetchInterestingPhotos {
             (photosResult) -> Void in
+            
+            self.updateDataSource()
+        }
+    }
+    
+    private func updateDataSource() {
+        self.store.fetchAllPhotos {
+            (photosResult) in
             switch photosResult {
             case let .success(photos):
-                print("Successfully found \(photos.count) photos.")
                 self.photoDataSource.photos = photos
-            case let .failure(error):
-                print("Error fetching interesting photos: \(error)")
+            case .failure(_):
                 self.photoDataSource.photos.removeAll()
             }
             self.collectionView.reloadSections(IndexSet(integer: 0))

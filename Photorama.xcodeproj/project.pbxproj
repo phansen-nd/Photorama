@@ -22,7 +22,9 @@
 		43F7021B1DA20D6100FFCFC9 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7021A1DA20D6100FFCFC9 /* PhotoInfoViewController.swift */; };
 		43F7021E1DA2119C00FFCFC9 /* Photorama.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43F7021C1DA2119C00FFCFC9 /* Photorama.xcdatamodeld */; };
 		43F702211DA212E700FFCFC9 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7021F1DA212E700FFCFC9 /* Photo+CoreDataClass.swift */; };
-		43F702221DA212E700FFCFC9 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F702201DA212E700FFCFC9 /* Photo+CoreDataProperties.swift */; };
+		43F702241DA2AEAF00FFCFC9 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F702231DA2AEAF00FFCFC9 /* Photo+CoreDataProperties.swift */; };
+		43F702261DA2AF9C00FFCFC9 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F702251DA2AF9C00FFCFC9 /* TagsViewController.swift */; };
+		43F702281DA2B48300FFCFC9 /* TagDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F702271DA2B48300FFCFC9 /* TagDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,9 @@
 		43F7021A1DA20D6100FFCFC9 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		43F7021D1DA2119C00FFCFC9 /* Photorama.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photorama.xcdatamodel; sourceTree = "<group>"; };
 		43F7021F1DA212E700FFCFC9 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
-		43F702201DA212E700FFCFC9 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		43F702231DA2AEAF00FFCFC9 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		43F702251DA2AF9C00FFCFC9 /* TagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		43F702271DA2B48300FFCFC9 /* TagDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +119,12 @@
 		4317E1AB1D91FA83005BC2E0 /* Photorama */ = {
 			isa = PBXGroup;
 			children = (
+				43F702231DA2AEAF00FFCFC9 /* Photo+CoreDataProperties.swift */,
 				43F7021F1DA212E700FFCFC9 /* Photo+CoreDataClass.swift */,
-				43F702201DA212E700FFCFC9 /* Photo+CoreDataProperties.swift */,
 				4317E1AC1D91FA83005BC2E0 /* AppDelegate.swift */,
 				4317E1DA1D921D44005BC2E0 /* PhotosViewController.swift */,
 				43F7021A1DA20D6100FFCFC9 /* PhotoInfoViewController.swift */,
+				43F702251DA2AF9C00FFCFC9 /* TagsViewController.swift */,
 				4317E1B01D91FA83005BC2E0 /* Main.storyboard */,
 				4317E1B31D91FA83005BC2E0 /* Assets.xcassets */,
 				4317E1B51D91FA83005BC2E0 /* LaunchScreen.storyboard */,
@@ -130,6 +135,7 @@
 				43F702161DA2065A00FFCFC9 /* PhotoCollectionViewCell.swift */,
 				4317E1DC1D921FF5005BC2E0 /* FlickrAPI.swift */,
 				43F7021C1DA2119C00FFCFC9 /* Photorama.xcdatamodeld */,
+				43F702271DA2B48300FFCFC9 /* TagDataSource.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -215,7 +221,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Patrick Hansen";
 				TargetAttributes = {
 					4317E1A81D91FA83005BC2E0 = {
@@ -288,14 +294,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F702211DA212E700FFCFC9 /* Photo+CoreDataClass.swift in Sources */,
+				43F702281DA2B48300FFCFC9 /* TagDataSource.swift in Sources */,
 				4317E1DD1D921FF5005BC2E0 /* FlickrAPI.swift in Sources */,
 				4317E1DB1D921D44005BC2E0 /* PhotosViewController.swift in Sources */,
 				4317E1DF1D935577005BC2E0 /* PhotoStore.swift in Sources */,
 				43F702191DA20C1600FFCFC9 /* ImageStore.swift in Sources */,
+				43F702261DA2AF9C00FFCFC9 /* TagsViewController.swift in Sources */,
 				43F702151DA203DE00FFCFC9 /* PhotoDataSource.swift in Sources */,
 				43F7021E1DA2119C00FFCFC9 /* Photorama.xcdatamodeld in Sources */,
 				43F702171DA2065A00FFCFC9 /* PhotoCollectionViewCell.swift in Sources */,
-				43F702221DA212E700FFCFC9 /* Photo+CoreDataProperties.swift in Sources */,
+				43F702241DA2AEAF00FFCFC9 /* Photo+CoreDataProperties.swift in Sources */,
 				4317E1AD1D91FA83005BC2E0 /* AppDelegate.swift in Sources */,
 				43F7021B1DA20D6100FFCFC9 /* PhotoInfoViewController.swift in Sources */,
 			);
@@ -366,8 +374,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -412,8 +422,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -432,6 +444,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
